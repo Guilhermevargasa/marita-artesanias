@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Márita Peças Artesanais</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<a
+  href="https://www.instagram.com/maritapecasartesanais/"
+  target="_blank"
+  class="botao-instagram-flutuante"
+>
+  <i class="fab fa-instagram"></i>
+  Instagram
+</a>
+
+
+<script>
+  const botao = document.querySelector('.botao-instagram-flutuante');
+  const footer = document.querySelector('footer');
+
+  window.addEventListener('scroll', () => {
+    const footerTop = footer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (footerTop < windowHeight) {
+      botao.style.display = 'none';
+    } else {
+      botao.style.display = 'block';
+    }
+  });
+</script>
+
+<body>
+
+  <!-- MENU -->
+  <header class="menu">
+    <h1 class="logo">Márita Peças Artesanais</h1>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="https://www.instagram.com/maritapecasartesanais" target="_blank">
+        Instagram
+      </a>
+    </nav>
+  </header>
+
+  <!-- INÍCIO -->
+  <section id="inicio" class="apresentacao">
+
+    <img
+      src="img/folder-marita.png"
+      alt="Folder Márita Peças Artesanais"
+      class="imagem-folder"
+    />
+
+    <h2>Artesanato feito à mão com carinho 💖</h2>
+
+    <p>
+      Cada peça é criada com amor, cuidado e atenção aos detalhes.
+      Para ver novidades, lançamentos e fazer pedidos,
+      acesse nosso Instagram.
+    </p>
+
+  <a
+  href="https://www.instagram.com/maritapecasartesanais/"
+  target="_blank"
+  class="botao-instagram-normal"
+>
+  Ver no Instagram
+</a>
+
+
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre">
+    <h2>Sobre a Márita</h2>
+
+    <p>
+      A <strong>Márita Peças Artesanais</strong> é um projeto criado por
+      <strong>Mariana</strong>, de 13 anos, apaixonada por artesanato.
+      Cada peça é feita com carinho, criatividade e dedicação,
+      refletindo amor pelos detalhes e pela arte manual.
+    </p><br>
+
+     <p>
+        Cada peça é produzida artesanalmente, com cuidado em cada detalhe,
+        valorizando cores, formas e combinações únicas. Mais do que produtos,
+        são criações feitas com carinho, paciência e muito capricho.
+      </p><br>
+
+      <p>
+        O projeto nasceu do desejo de transformar criatividade em algo especial,
+        mostrando que, mesmo jovem, é possível criar com responsabilidade,
+        compromisso e paixão pelo que se faz.
+      </p><br>
+
+      <p>
+        Para acompanhar novidades, lançamentos e conhecer de perto o trabalho
+        da Mariana, acesse o Instagram da Márita.
+      </p>
+
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>© 2026 · Márita Peças Artesanais</p>
+  </footer>
+
+</body>
+</html>
+
+
+

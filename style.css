@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fff0f5;
+  color: #333;
+  text-align: center;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #f7c1d9;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* Conteúdo principal */
+.apresentacao {
+  padding: 50px 20px;
+}
+
+.apresentacao p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+}
+
+/* Imagem do folder */
+.imagem-folder {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 30px;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Botão Instagram */
+.botao-instagram {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 14px 22px;
+  background-color: #e1306c;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.botao-instagram:hover {
+  background-color: #c2265b;
+  transform: scale(1.08);
+}
+
+
+/* Rodapé */
+footer {
+  background-color: #f7c1d9;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+.botao-voltar {
+  display: inline-block;
+  background-color: #999;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.botao-voltar:hover {
+  background-color: #777;
+  transform: scale(1.05);
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8d7e4;
+}
+
+.logo {
+  font-family: 'cursive';
+  font-size: 26px;
+  color: #000;
+}
+
+.menu nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.menu nav a:hover {
+  text-decoration: underline;
+}
+
+/* SOBRE */
+.sobre {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.sobre h2 {
+  margin-bottom: 15px;
+}
+
+.sobre {
+  background-color: #fff0f5; /* rosa bem suave */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-family: 'Pacifico', cursive;
+  color: #000;
+}
+
+.sobre p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+  color: #000;
+}
+
+.botao-instagram-normal {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background-color: #e1306c;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-instagram-normal:hover {
+  background-color: #c2265b;
+  transform: scale(1.05);
+}
+
+.botao-instagram-flutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 22px;
+  background-color: #e1306c; /* rosa Instagram */
+  color: #fff;
+
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 50px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.botao-instagram-flutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 22px;
+  background-color: #e1306c; /* rosa Instagram */
+  color: #fff;
+
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 50px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.botao-instagram-flutuante:hover {
+  background-color: #000; /* preto elegante */
+  transform: scale(1.08);
+}
+
+@media (max-width: 600px) {
+  .botao-instagram-flutuante {
+    padding: 12px 18px;
+    font-size: 14px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+.botao-instagram-flutuante {
+  animation: aparecer 0.6s ease-out;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.botao-instagram-flutuante {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.botao-instagram-flutuante i {
+  font-size: 18px;
+  transition: transform 0.4s ease;
+}
+
+.botao-instagram-flutuante:hover i {
+  transform: rotate(12deg) scale(1.2);
+}
